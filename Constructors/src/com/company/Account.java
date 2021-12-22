@@ -11,7 +11,7 @@ class Account {
     public Account() {
         // This is optional and creates default values when class is called with no args
         this("56789", 2.50, "Default Name",
-                "Default Address", "Default Address")
+                "Default Address", "Default Address");
         System.out.println("Empty constructor called");
     }
 
