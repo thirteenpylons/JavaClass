@@ -17,6 +17,12 @@ public class EmployeeTest {
         }
 
         for (Employee e : staff) {
+            e.setId();
+            System.out.println("Employee " + e.getName()
+                + " Id is " + e.getId());
+        }
+
+        for (Employee e : staff) {
             System.out.println("name=" + e.getName()
                     + ", salary=" + e.getSalary()
                     + ", hireDate=" + e.getHireDate());
