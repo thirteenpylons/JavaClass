@@ -56,8 +56,8 @@ public class Employee {
         return nextId;
     }
 
-    // a method
-    public String getName() {
+    // a final method cannot be changed in subclasses
+    public final String getName() {
         return name;
     }
 
