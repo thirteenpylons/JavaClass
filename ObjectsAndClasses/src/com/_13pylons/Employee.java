@@ -2,7 +2,7 @@ package com._13pylons;
 import java.time.*;
 import java.util.Objects;
 
-public class Employee {
+public class Employee extends Person{
     // instance fields
     private String name;
     private double salary;
@@ -67,6 +67,10 @@ public class Employee {
 
     public LocalDate getHireDate() {
         return hireDate;
+    }
+
+    public String getDescription() {
+        return String.format("an employee with a salary of %.2f", salary);
     }
 
     public void raiseSalary(double byPercent) {
